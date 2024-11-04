@@ -1,0 +1,137 @@
+.patient-history-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 50px;
+  background-color: whitesmoke;
+  height: 100vh; /* Make sure it spans the height of the screen */
+}
+
+.history-form {
+  flex: 1;
+  max-width: 40%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px; /* Curvier block */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Deeper shadow for modern look */
+  font-family: 'Poppins', sans-serif; /* Using Poppins font for modern touch */
+  margin: auto; /* Centering form vertically */
+}
+
+.history-form h4 {
+  color: black; /* Purple for heading */
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.history-form .form-group {
+  margin-bottom: 15px;
+}
+
+.history-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333333; /* Dark grey for text */
+  font-size: 1rem;
+}
+
+.history-form input,
+.history-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Curvier input fields */
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+.history-form input:focus,
+.history-form textarea:focus {
+  border-color: #5E17EB; /* Purple border on focus */
+  outline: none;
+}
+
+.history-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #8A2BE2 !important; /* Button with purple color */
+  color: white;
+  border: none;
+  border-radius: 10px; /* Curved button */
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Slight shadow for button */
+}
+
+.history-form button:hover {
+  background-color: #6A0DAD; /* Darker purple on hover */
+  transform: translateY(-3px); /* Lift effect on hover */
+}
+
+.history-list {
+  flex: 1;
+  max-width: 55%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px; /* Curvier block */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif; /* Using Poppins font for modern touch */
+}
+
+.history-list h3 {
+  color: black; /* Purple heading */
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.history-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.history-item h4 {
+  color: #444; /* Dark grey for titles */
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.history-item p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: darkgray; /* Slightly lighter grey for text */
+}
+
+/* Error message styling */
+.error {
+  color: #e63946; /* Red for errors */
+  font-size: 0.9rem;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .patient-history-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .history-form {
+    max-width: 90%; /* Expand form to take more width on smaller screens */
+  }
+
+  .history-list {
+    max-width: 90%; /* Expand history list to take more width on smaller screens */
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,89 @@
+.modal {
+    width: 500px !important ; /* Increase modal width */
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif !important;/* Change font style */
+  }
+  
+  h2 {
+    font-size: 2rem; /* Increase font size for heading */
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif !important; /* Heading font style */
+  }
+  
+  p {
+    font-size: 1.1rem; /* Increase font size for paragraphs */
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  input[type="checkbox"] {
+    width: 20px;  /* Increase checkbox size */
+    height: 20px; /* Increase checkbox size */
+    margin-right: 10px;
+  }
+  
+  label {
+    font-size: 1.2rem; /* Increase font size for labels */
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="text"] {
+    padding: 12px;  /* Increase input field padding */
+    font-size: 1.1rem;  /* Increase font size for input */
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 12px 20px;  /* Increase button padding */
+    font-size: 1.2rem;  /* Increase button font size */
+    background-color: #4c57e8 !important ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #4974eb;
+  }
+  
+  button:disabled {
+    background-color: #cccccc; /* Disabled button style */
+    cursor: not-allowed;
+  }
+  
+  ul {
+    margin-left: 20px;
+    font-size: 1.1rem; /* Increase font size for terms and conditions */
+  }
+  
+  .modal .scrollable-list {
+    max-height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  li {
+    margin-bottom: 10px; /* Adds space between each list item */
+    color: black;
+  }
+  p.large-text {
+    font-size: 20px; /* Increases font size to 20px */
+  }
+  
+  

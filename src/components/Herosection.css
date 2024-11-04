@@ -1,0 +1,100 @@
+/* HeroSection.css */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background-color: white; /* White background for simplicity */
+  height: 80vh; /* Ensures the hero section takes up most of the screen */
+  position: relative; /* For positioning the image */
+  font-family: 'Poppins', sans-serif !important; /* Using Poppins font */ 
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 50%; /* Limiting the content width for better layout */
+}
+
+.hero-content h1 {
+  font-size: 3.5rem; /* Emphasize the title with larger text */
+  color: black; /* Deep blue for text consistency */
+  margin-bottom: 0px; /* Space between title and paragraph */
+  font-weight: 600; /* Slightly bolder title for more impact */
+  
+}
+
+.hero-content p {
+  font-size: 1.2rem; /* Increased readability */
+  margin-bottom: 0px; /* Consistent spacing */
+  color: #333333; /* Darker text for readability */
+  line-height: 1.6; /* Better line spacing for readability */
+  text-align: left;
+}
+
+.btn-get-started {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  background-color: #8A2BE2 !important;  /* Light green button */
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the button */
+  margin-top: 20px;
+}
+
+.btn-get-started:hover {
+  background-color: #7B1FA2; /* Change to darker teal on hover */
+  transform: translateY(-3px); /* Slight animation on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+}
+
+/* Styles for the hero image */
+.hero-image {
+  max-width: 100% !important;
+  margin-right: 100px; /* Adjust space between content and image */
+}
+
+.hero-image img {
+  width: 100% !important; /* Ensures image scales well */
+ /* Soft shadow for depth */
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 0.95; /* Slight transparency for effect */
+}
+
+.hero-image img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  opacity: 1; /* Full opacity on hover */
+  box-shadow: 0 100px 100px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.dynamic-word {
+  font-weight: bold;
+  color: grey; /* Bold purple color */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.transition-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+}
+
+.btn-symptom-checker {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  background-color: #8A2BE2 !important;  /* Light green button */
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the button */
+  margin-top: 20px;
+}
+
+.btn-symptom-checker:hover {
+  background-color: #8345a0; /* Add hover effect if necessary */
+}

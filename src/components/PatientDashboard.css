@@ -1,0 +1,74 @@
+/* PatientDashboard.css */
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f8f9fa; /* Light grey background */
+  }
+  
+  /* Sidebar Styling */
+  .sidebar {
+    width: 300px;
+    background-color: #2E2E2E; /* Dark grey sidebar */
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-info {
+    margin-bottom: 40px;
+  }
+  
+  .user-info h3,
+  .healthcare-block h3 {
+    font-size: 1.2rem;
+    color: #4cb6e8; /* Light green for section headings */
+    margin-bottom: 15px;
+  }
+  
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #333; /* Dark grey for item background */
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar-item.active,
+  .sidebar-item:hover {
+    background-color: #57cc99; /* Green for hover and active state */
+    color: white;
+  }
+  
+  .sidebar-item i {
+    margin-right: 10px;
+  }
+  
+  .logout {
+    background-color: #8A2BE2 !important; /* Red for logout button */
+  }
+  
+  .logout:hover {
+    background-color: #c9302c; /* Darker red for logout button on hover */
+  }
+  
+  /* Main Content Styling */
+  .main-content {
+    flex: 1;
+    padding: 40px;
+    background-color: #ffffff;
+    overflow-y: auto;
+  }
+  
+  .main-content h3 {
+    font-size: 1.8rem;
+    color: black; /* Blue heading color */
+    margin-bottom: 20px;
+  }
+  

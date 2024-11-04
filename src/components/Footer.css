@@ -1,0 +1,103 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 20px;
+  background-color: #333333; /* Darker background for footer */
+  color: #FFFFFF;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.footer-left {
+  max-width: 250px;
+  margin-right: 200px;
+}
+
+.footer-logo {
+  font-size: 2.5rem;
+  color: grey; /* Light purple for logo */
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif; /* Added Poppins font */
+}
+
+.footer-desc {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #E0E0E0; /* Softer white for description text */
+}
+
+.footer-contact {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #FFFFFF;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  display: inline-block;
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex: 1;
+  margin-right: 150px;
+}
+
+.footer-column h3 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: grey; /* Consistent purple for section headings */
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 15px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: color 0.3s, text-decoration 0.3s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-column ul li a:hover {
+  color: #57CC99; /* Light teal on hover */
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-left {
+    margin-bottom: 30px;
+  }
+}

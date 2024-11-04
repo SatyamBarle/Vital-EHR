@@ -1,0 +1,128 @@
+.feedback-reviews-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 1000px; /* Sets a limit on width */
+  margin: 20px auto;
+}
+
+.feedback-reviews-container h3 {
+  color: #000000 !important; /* Black for headings */
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif; /* Consistent font style */
+  text-align: center;
+}
+
+.reviews-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexibly adjusts layout */
+  gap: 20px;
+}
+
+.review-item {
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 20px; /* Curvier blocks */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); /* Stronger shadow for modern look */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.review-item:hover {
+  transform: translateY(-8px); /* Upward hover effect */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+.review-item h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #333333; /* Darker gray for headers */
+}
+
+.review-item p {
+  margin-bottom: 8px;
+  color: #666666; /* Lighter gray for text */
+}
+
+.feedback-container {
+  width: 450px;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 15px;
+  background-color: #f7f9fc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: 'Poppins', sans-serif; /* Consistent font */
+  color: #333333; /* Gray color for labels */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Curvier inputs */
+  font-family: 'Poppins', sans-serif; /* Consistent font */
+  transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #8a2be2; /* Purple border on focus */
+  outline: none;
+}
+
+textarea {
+  height: 120px; /* Adjusted textarea height */
+}
+
+.rating {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.star {
+  color: #ccc;
+}
+
+.star.filled {
+  color: #f5b301; /* Golden stars for ratings */
+}
+
+.submit-button {
+  background-color: #8a2be2 !important; /* Purple for the submit button */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px; /* More rounded button */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #7322b0; /* Darker purple on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+}

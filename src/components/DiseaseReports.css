@@ -1,0 +1,118 @@
+/* Container for the disease reports page */
+.disease-report-container {
+  max-width: 600px; /* Increased width for better spacing */
+  margin: 40px auto; /* Centered with larger margin */
+  padding: 30px; /* Increased padding */
+  background-color: #ffffff; /* Clean white background */
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Deeper shadow for emphasis */
+  font-family: 'Poppins', sans-serif; /* Consistent, modern font */
+}
+
+/* Title for the page */
+.disease-report-container h2 {
+  text-align: center;
+  color: #333333;
+  font-size: 2rem; /* Larger title font */
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+/* Section to display filter or date selection */
+.filter-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+/* Dropdown style for selecting month/year or other options */
+.filter-section select,
+.filter-section input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 200px; /* Restrict width */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: border-color 0.3s ease;
+}
+
+.filter-section select:focus,
+.filter-section input[type="date"]:focus {
+  border-color: #8A2BE2; /* Violet focus effect */
+  outline: none;
+}
+
+/* Button for generating the report */
+.generate-report-btn {
+  background-color: #8A2BE2; /* Violet button to match theme */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.generate-report-btn:hover {
+  background-color: #6A0DAD;
+  transform: translateY(-2px); /* Lift effect */
+}
+
+/* Table styles for displaying reports */
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+  text-align: left;
+}
+
+.report-table th,
+.report-table td {
+  padding: 15px; /* Increased padding */
+  border: 1px solid #ddd;
+  font-size: 1rem; /* Consistent font size */
+}
+
+.report-table th {
+  background-color: #8A2BE2; /* Violet background for headers */
+  color: white;
+  font-weight: bold;
+  text-align: left; /* Align header text to the left */
+}
+
+.report-table td {
+  background-color: #fff;
+  color: #333333;
+}
+
+/* Alternating row colors for better readability */
+.report-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .filter-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter-section select,
+  .filter-section input[type="date"] {
+    margin-bottom: 10px;
+    width: 100%; /* Make full width on mobile */
+  }
+
+  .generate-report-btn {
+    width: 100%; /* Full-width button for mobile */
+  }
+
+  .disease-report-container {
+    padding: 20px; /* Adjust padding for mobile */
+  }
+}

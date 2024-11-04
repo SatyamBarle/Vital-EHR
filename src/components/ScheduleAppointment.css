@@ -1,0 +1,108 @@
+/* Scoped styles for Schedule Appointment */
+.schedule-appointment-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 20px; /* More curvier design */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 600px;
+  margin: 30px auto; /* Centered container */
+}
+
+.schedule-appointment-container h3 {
+  color: #333333; /* Darker color for heading */
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center; /* Centered heading */
+}
+
+.schedule-appointment-container .add-appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between form elements */
+}
+
+.schedule-appointment-container .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule-appointment-container label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555555; /* Darker gray for labels */
+  font-family: 'Poppins', sans-serif;
+}
+
+.schedule-appointment-container select, 
+.schedule-appointment-container input[type="date"], 
+.schedule-appointment-container input[type="time"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Curvier inputs */
+  font-family: 'Poppins', sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+.schedule-appointment-container select:focus, 
+.schedule-appointment-container input[type="date"]:focus, 
+.schedule-appointment-container input[type="time"]:focus {
+  border-color: #8A2BE2; /* Purple border on focus */
+  outline: none;
+}
+
+.schedule-appointment-container button {
+  padding: 12px 25px;
+  background-color: #8A2BE2; /* Purple for primary buttons */
+  color: #fff;
+  border: none;
+  border-radius: 10px; /* Curvier button */
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 100%;
+}
+
+.schedule-appointment-container button:hover {
+  background-color: #7322b0 ; /* Darker purple on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+.schedule-appointment-container button:disabled {
+  background-color: #cccccc; /* Disabled state */
+  cursor: not-allowed;
+}
+
+.schedule-appointment-container .error {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.schedule-appointment-container .add-close-buttons {
+  display: flex;
+  justify-content: space-between; /* Side by side buttons */
+  gap: 10px; /* Space between buttons */
+  margin-top: 15px;
+}
+
+.schedule-appointment-container .close-button {
+  background-color: #007bff; /* Blue for close button */
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 25px;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  cursor: pointer;
+  width: 100%;
+}
+
+.schedule-appointment-container .close-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+}

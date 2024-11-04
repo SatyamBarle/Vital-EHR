@@ -1,0 +1,90 @@
+/* Features.css */
+.features-section {
+  padding: 80px 20px; /* Increased padding for more space */
+  background-color: white; /* Clean, light background for clarity */
+  text-align: center;
+  margin-top: 0;
+  
+}
+
+.features-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items from the top */
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px; /* Adds space between title and features */
+}
+
+.feature-item {
+  background-color: #F9F9F9;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  min-height: 450px; /* Ensure a consistent height */
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Space between rows on smaller screens */
+}
+
+.feature-item img {
+  width: 150px; /* Slightly increased image size for better prominence */
+  height: 150px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature-item h3 {
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: rgb(68, 67, 67);;
+}
+
+.feature-item p {
+  font-size: 1.1rem;
+  color: #333333;
+  line-height: 1.6; /* Better readability */
+  margin-bottom: 15px;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px); /* More pronounced hover effect */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+}
+
+.feature-item img:hover {
+  transform: scale(1.2); /* More noticeable zoom effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .feature-item {
+    width: 45%; /* Adjust width for tablet view */
+  }
+
+  .features-grid {
+    gap: 30px; /* Reduced gap for better space usage */
+  }
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    flex-direction: column;
+  }
+
+  .feature-item {
+    width: 90%; /* Full width for mobile devices */
+    height: auto; /* Flexible height */
+  }
+
+  .feature-item img {
+    width: 120px; /* Reduced size for smaller screens */
+    height: 120px;
+  }
+}

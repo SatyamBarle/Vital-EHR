@@ -1,0 +1,116 @@
+.signup-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: whitesmoke;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Enhanced box shadow for depth */
+  border-radius: 20px; /* Increased border radius for a modern look */
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.signup-container:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+h1 {
+  text-align: center;
+  color: black !important; /* Purple for heading */
+  font-family: 'Poppins', sans-serif; /* Use Poppins font */
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+}
+
+.signup-form .form-group {
+  margin-bottom: 25px;
+}
+
+.signup-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: black; /* Dark Gray for labels */
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.signup-form input,
+.signup-form select,
+.signup-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #CCC;
+  border-radius: 200px !important; /* More rounded input fields */
+  margin-bottom: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.signup-form input:focus,
+.signup-form select:focus,
+.signup-form textarea:focus {
+  border-color: #5E17EB; /* Purple focus border */
+  outline: none;
+  box-shadow: 0 0 5px rgba(94, 23, 235, 0.3); /* Focus shadow */
+}
+
+.signup-form textarea {
+  height: 120px;
+}
+
+.signup-form .error {
+  color: #FF6B6B; /* Error color */
+  font-size: 0.9rem;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 15px;
+  background-color: #8A2BE2!important; /* Purple for buttons */
+  color: #ffffff;
+  border: none;
+  border-radius: 30px; /* More rounded button */
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(94, 23, 235, 0.2); /* Subtle button shadow */
+}
+
+.btn-submit:hover {
+  background-color: #4507C8; /* Darker purple on hover */
+  box-shadow: 0 6px 15px rgba(69, 7, 200, 0.3); /* Enhanced shadow on hover */
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+p a {
+  color: #5E17EB; /* Purple for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signup-container {
+      padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  h1 {
+      font-size: 1.8rem; /* Reduce font size for smaller screens */
+  }
+
+  .btn-submit {
+      font-size: 1rem; /* Reduce button text size */
+      padding: 12px; /* Adjust button padding */
+  }
+}

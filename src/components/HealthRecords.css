@@ -1,0 +1,75 @@
+/* HealthRecords.css */
+.health-records-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.health-records-container h3 {
+  color: #000000; /* Use black for heading */
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif; /* Font style */
+  text-align: left;
+}
+
+.records-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.record-item {
+  background-color: #f7f9fc; /* Light background for cards */
+  padding: 20px;
+  border-radius: 15px; /* Curved corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  transition: transform 0.3s, box-shadow 0.3s;
+  font-family: 'Poppins', sans-serif; /* Consistent font */
+}
+
+.record-item:hover {
+  transform: translateY(-5px); /* Slight upward hover effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.record-item h4 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #000000; /* Black color for headings */
+  font-weight: 600;
+}
+
+.record-item p {
+  color: #4f4f4f; /* Darker gray for smaller text */
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.record-date {
+  font-size: 0.9rem;
+  color: #666666; /* Slightly lighter gray for date */
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .health-records-container {
+    padding: 10px;
+  }
+
+  .records-list {
+    grid-template-columns: 1fr; /* Stack records vertically on smaller screens */
+  }
+
+  .record-item {
+    padding: 15px;
+  }
+
+  .record-item h4 {
+    font-size: 1.2rem;
+  }
+}

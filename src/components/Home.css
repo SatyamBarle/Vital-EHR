@@ -1,0 +1,209 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for centering content */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+/* Vital Logo */
+.logo {
+  background-color: #FFFFFF;
+  margin-left: center;
+}
+
+.vital-logo {
+  width: 100px; 
+  height: 100px; 
+  object-fit: contain; 
+  font-family: sans-serif;
+  padding: 0px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #2C2C2C; /* Dark grey for navbar */
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-links ul li {
+  margin: 0 20px;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+.nav-right button {
+  background-color: #8A2BE2; /* Purple for buttons */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background-color: whitesmoke; /* Clean white background */
+  height: 80vh; /* Adjusted height */
+  position: relative; /* Needed for absolute positioning of the image */
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-left h1 {
+  font-size: 3.5rem;
+  color: #5E17EB; /* Bold purple color for the title */
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif; /* Use Poppins font for titles */
+}
+
+.hero-left p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #333333; /* Darker grey for readability */
+  line-height: 1.6; /* Better readability */
+  font-family: 'Poppins', sans-serif; /* Use Poppins font for paragraphs */
+}
+
+.hero-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add soft shadow to image */
+}
+
+/* Service Blocks */
+.vital-services {
+  padding: 40px;
+  background-color: whitesmoke; /* Soft background */
+  text-align: center;
+}
+
+.service-blocks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.block {
+  padding: 20px;
+  background-color: #8A2BE2; /* Purple background for blocks */
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #333333; /* Dark grey for the footer */
+  color: white;
+}
+
+.footer .left,
+.footer .right {
+  flex: 1;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.footer ul li a:hover {
+  color: #A259FF; /* Light purple for hover */
+}
+
+/* Typography and Spacing */
+h1, h2, p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: #333333; /* Dark grey text for readability */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #8A2BE2; /* Purple buttons */
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+button:hover {
+  background-color: #6A0DAD; /* Darker purple on hover */
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-blocks {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-blocks {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+}

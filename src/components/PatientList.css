@@ -1,0 +1,74 @@
+/* Main Patient List Container */
+.patient-list-container {
+  padding: 30px;
+  background-color: white; /* Light grey background */
+  border-radius: 15px; /* More curved edges */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Deeper shadow for better depth */
+  max-width: 1000px;
+  margin: 40px auto; /* Centered container */
+  font-family: 'Poppins', sans-serif; /* Updated to match modern design */
+}
+
+/* Title */
+.patient-list-container h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333; /* Black color for heading */
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* Patient List */
+.patient-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+  gap: 20px;
+}
+
+/* Individual Patient Item */
+.patient-item {
+  background-color: whitesmoke;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 15px; /* More rounded corners for a modern look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 300px; /* Fixed width for uniform card size */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+/* Card Hover Effect */
+.patient-item:hover {
+  transform: translateY(-5px); /* Lift up on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Heading in the Card */
+.patient-item h3 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: rgb(47, 69, 117) !important; /* Dark blue color for patient name */
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Paragraph inside Card */
+.patient-item p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #333; /* Black text for patient details */
+  line-height: 1.5;
+}
+
+/* Error Message */
+.error-message {
+  color: #e63946;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
