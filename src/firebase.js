@@ -3,7 +3,7 @@ import { getFirestore } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyD1O9Pf5_7w2HsekB9NgBsFGzbyqV4_UbQ",
+    apiKey: "your_api",
     authDomain: "vital-ehr.firebaseapp.com",
     projectId: "vital-ehr",
     storageBucket: "vital-ehr.appspot.com",
