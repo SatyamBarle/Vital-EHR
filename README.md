@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+**🏥 Vihar EHR – Electronic Health Record System**
+Vihar EHR is a full-stack web application designed to securely store, manage, and analyze electronic health records (EHRs). The platform enables doctors, patients, and administrators to interact with medical data through a centralized, user-friendly interface.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The system integrates real-time data entry, secure authentication, and a machine learning API to support intelligent health insights (e.g., anomaly detection, predictive alerts).
+# Tech Stack
+Frontend: React.js, HTML5, CSS3, Bootstrap
+Backend: Firebase Authentication, Firestore Database
+ML Integration: Python (Flask API), Scikit-Learn
+Other Tools: Git, GitHub, VS Code
+# Features
+1.User Authentication: Secure login system for doctors and patients using Firebase Auth.
+2.EHR Management: Patients can upload health records; doctors can view/update records.
+3.ML API Integration: Predictive health insights powered by ML models served via Flask.
+4.Responsive UI: Built with React + Bootstrap for seamless cross-device experience.
+5.Scalable Cloud Backend: Firestore ensures real-time updates and reliable data storage.
 
-## Available Scripts
+<img width="1884" height="855" alt="Screenshot 2025-09-27 003539" src="https://github.com/user-attachments/assets/1deee45d-97dd-42e1-9498-fec3de34ee91" />
 
-In the project directory, you can run:
+<img width="1884" height="885" alt="Screenshot 2025-09-27 002218" src="https://github.com/user-attachments/assets/9feba1e2-a881-4de5-9c79-1af0fb05f290" />
 
-### `npm start`
+<img width="1892" height="908" alt="Screenshot 2025-09-27 002231" src="https://github.com/user-attachments/assets/4e4a7d52-ec33-46bc-a563-4a48666f3549" />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img width="1874" height="893" alt="Screenshot 2025-09-27 002246" src="https://github.com/user-attachments/assets/16f2b3e2-2123-4bb5-bde5-aac8a5bc2481" />
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img width="1888" height="899" alt="Screenshot 2025-09-27 002419" src="https://github.com/user-attachments/assets/9e7fbf85-846b-4f57-b4f1-41b1977b920a" />
